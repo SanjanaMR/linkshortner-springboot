@@ -1,0 +1,17 @@
+package com.ls;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@EnableJpaRepositories(basePackages="com.dao")
+@EntityScan(basePackages="com.model")
+
+@SpringBootApplication(scanBasePackages="com")
+@SpringBootApplication
+public class UrlShortnerApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(UrlShortnerApplication.class, args);
+	}
+
+}

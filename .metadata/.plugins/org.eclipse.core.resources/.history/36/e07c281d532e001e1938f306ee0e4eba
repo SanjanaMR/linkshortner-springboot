@@ -1,0 +1,46 @@
+package com.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Url {
+	
+	@Id
+	private int id;
+	private String shorturl;
+	private String originalurl;
+	@Override
+	public String toString() {
+		return "Url [id=" + id + ", shorturl=" + shorturl + ", originalurl=" + originalurl + "]";
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getShorturl() {
+		return shorturl;
+	}
+	public void setShorturl(String shorturl) {
+		this.shorturl = shorturl;
+	}
+	public String getOriginalurl() {
+		return originalurl;
+	}
+	public void setOriginalurl(String originalurl) {
+		this.originalurl = originalurl;
+	}
+	public Url(int id, String shorturl, String originalurl) {
+		super();
+		this.id = id;
+		this.shorturl = shorturl;
+		this.originalurl = originalurl;
+	}
+	public Url() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+}

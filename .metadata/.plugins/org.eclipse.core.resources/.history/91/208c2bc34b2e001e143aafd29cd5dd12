@@ -1,0 +1,13 @@
+package com.dao;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class UrlService {
+
+	public String getOriginalUrl(String id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

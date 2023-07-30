@@ -1,0 +1,17 @@
+package com.dao;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class UrlService {
+	
+	@Autowired
+	private UrlDataRepository urlDataRepository;
+
+	public String getOriginalUrl(String id) {
+		// TODO Auto-generated method stub
+		return urlDataRepository.findByShortUrl(id);
+	}
+
+}

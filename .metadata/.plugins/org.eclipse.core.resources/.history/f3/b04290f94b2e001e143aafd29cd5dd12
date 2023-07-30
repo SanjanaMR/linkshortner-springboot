@@ -1,0 +1,9 @@
+package com.dao;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.model.Url;
+
+public interface UrlDataRepository extends JpaRepository<Url, Integer>{
+
+}
